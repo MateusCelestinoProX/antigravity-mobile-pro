@@ -1,0 +1,3253 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
+      "label": "AntigravityWebViewClient",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": "antigravitywebviewclient",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L134"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge",
+      "label": "AntigravityNativeBridge",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "AntigravityNativeBridge",
+      "file_type": "code",
+      "norm_label": "antigravitynativebridge",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L227"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "label": "KeepAliveService",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "keepaliveservice",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "label": "MainActivity",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "norm_label": "mainactivity",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L32"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener",
+      "label": "NetworkStateListener",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": "networkstatelistener",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L30"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient",
+      "label": "AntigravityWebChromeClient",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": ".configureWebView",
+      "file_type": "code",
+      "norm_label": "antigravitywebchromeclient",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L175"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onprogresschanged",
+      "label": ".onProgressChanged()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": ".onprogresschanged()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L176"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagefinished",
+      "label": ".onPageFinished()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getInstance",
+            "receiver_type": "CookieManager",
+            "lang": "java",
+            "line": "L145"
+          }
+        ]
+      },
+      "norm_label": ".onpagefinished()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L141"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagestarted",
+      "label": ".onPageStarted()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": ".onpagestarted()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L135"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onreceivederror",
+      "label": ".onReceivedError()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "isForMainFrame",
+            "receiver_type": "WebResourceRequest",
+            "lang": "java",
+            "line": "L152"
+          },
+          {
+            "callee": "w",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L153"
+          },
+          {
+            "callee": "getDescription",
+            "receiver_type": "WebResourceError",
+            "lang": "java",
+            "line": "L153"
+          }
+        ]
+      },
+      "norm_label": ".onreceivederror()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L149"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_shouldoverrideurlloading",
+      "label": ".shouldOverrideUrlLoading()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getUrl",
+            "receiver_type": "WebResourceRequest",
+            "lang": "java",
+            "line": "L159"
+          },
+          {
+            "callee": "getHost",
+            "receiver_type": "Uri",
+            "lang": "java",
+            "line": "L160"
+          }
+        ]
+      },
+      "norm_label": ".shouldoverrideurlloading()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L157"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_injectwatchdogscript",
+      "label": ".injectWatchdogScript()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "evaluateJavascript",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L278"
+          }
+        ]
+      },
+      "norm_label": ".injectwatchdogscript()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L248"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onbackpressed",
+      "label": ".onBackPressed()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "canGoBack",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L341"
+          },
+          {
+            "callee": "goBack",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L342"
+          }
+        ]
+      },
+      "norm_label": ".onbackpressed()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L339"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworklost",
+      "label": ".onNetworkLost()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "w",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L336"
+          }
+        ]
+      },
+      "norm_label": ".onnetworklost()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L334"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onpause",
+      "label": ".onPause()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getInstance",
+            "receiver_type": "CookieManager",
+            "lang": "java",
+            "line": "L362"
+          }
+        ]
+      },
+      "norm_label": ".onpause()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L358"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onresume",
+      "label": ".onResume()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "onResume",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L353"
+          },
+          {
+            "callee": "getInstance",
+            "receiver_type": "CookieManager",
+            "lang": "java",
+            "line": "L354"
+          }
+        ]
+      },
+      "norm_label": ".onresume()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L349"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_log",
+      "label": ".log()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "AntigravityNativeBridge",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "d",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L244"
+          }
+        ]
+      },
+      "norm_label": ".log()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L242"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_oninstancedisconnected",
+      "label": ".onInstanceDisconnected()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "AntigravityNativeBridge",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "w",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L230"
+          }
+        ]
+      },
+      "norm_label": ".oninstancedisconnected()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L228"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_onsocketclosed",
+      "label": ".onSocketClosed()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "AntigravityNativeBridge",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "w",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L236"
+          }
+        ]
+      },
+      "norm_label": ".onsocketclosed()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L234"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_isnetworkconnected",
+      "label": ".isNetworkConnected()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "AntigravityNativeBridge",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getActiveNetworkInfo",
+            "receiver_type": "ConnectivityManager",
+            "lang": "java",
+            "line": "L302"
+          },
+          {
+            "callee": "isConnected",
+            "receiver_type": "NetworkInfo",
+            "lang": "java",
+            "line": "L303"
+          }
+        ]
+      },
+      "norm_label": ".isnetworkconnected()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L298"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworkavailable",
+      "label": ".onNetworkAvailable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "AntigravityNativeBridge",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "i",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L323"
+          },
+          {
+            "callee": "post",
+            "receiver_type": "Handler",
+            "lang": "java",
+            "line": "L324"
+          },
+          {
+            "callee": "getUrl",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L325"
+          },
+          {
+            "callee": "loadUrl",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L327"
+          }
+        ]
+      },
+      "norm_label": ".onnetworkavailable()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L321"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_performsmartreconnect",
+      "label": ".performSmartReconnect()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "AntigravityNativeBridge",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "currentTimeMillis",
+            "receiver_type": "System",
+            "lang": "java",
+            "line": "L282"
+          },
+          {
+            "callee": "i",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L289"
+          },
+          {
+            "callee": "makeText",
+            "receiver_type": "Toast",
+            "lang": "java",
+            "line": "L290"
+          },
+          {
+            "callee": "reload",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L292"
+          },
+          {
+            "callee": "w",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L294"
+          }
+        ]
+      },
+      "norm_label": ".performsmartreconnect()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L281"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_buildnotification",
+      "label": ".buildNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": ".buildNotification",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "setFlags",
+            "receiver_type": "Intent",
+            "lang": "java",
+            "line": "L142"
+          },
+          {
+            "callee": "getActivity",
+            "receiver_type": "PendingIntent",
+            "lang": "java",
+            "line": "L143"
+          },
+          {
+            "callee": "setContentTitle",
+            "receiver_type": "Builder",
+            "lang": "java",
+            "line": "L155"
+          },
+          {
+            "callee": "build",
+            "receiver_type": "Builder",
+            "lang": "java",
+            "line": "L161"
+          }
+        ]
+      },
+      "norm_label": ".buildnotification()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L140"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_acquirelocks",
+      "label": ".acquireLocks()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "newWakeLock",
+            "receiver_type": "PowerManager",
+            "lang": "java",
+            "line": "L65"
+          },
+          {
+            "callee": "setReferenceCounted",
+            "receiver_type": "WakeLock",
+            "lang": "java",
+            "line": "L69"
+          },
+          {
+            "callee": "acquire",
+            "receiver_type": "WakeLock",
+            "lang": "java",
+            "line": "L70"
+          },
+          {
+            "callee": "createWifiLock",
+            "receiver_type": "WifiManager",
+            "lang": "java",
+            "line": "L75"
+          },
+          {
+            "callee": "setReferenceCounted",
+            "receiver_type": "WifiLock",
+            "lang": "java",
+            "line": "L79"
+          },
+          {
+            "callee": "acquire",
+            "receiver_type": "WifiLock",
+            "lang": "java",
+            "line": "L80"
+          },
+          {
+            "callee": "i",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L82"
+          },
+          {
+            "callee": "e",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L84"
+          }
+        ]
+      },
+      "norm_label": ".acquirelocks()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L61"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_createnotificationchannel",
+      "label": ".createNotificationChannel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "setDescription",
+            "receiver_type": "NotificationChannel",
+            "lang": "java",
+            "line": "L127"
+          },
+          {
+            "callee": "setShowBadge",
+            "receiver_type": "NotificationChannel",
+            "lang": "java",
+            "line": "L128"
+          },
+          {
+            "callee": "enableVibration",
+            "receiver_type": "NotificationChannel",
+            "lang": "java",
+            "line": "L129"
+          },
+          {
+            "callee": "enableLights",
+            "receiver_type": "NotificationChannel",
+            "lang": "java",
+            "line": "L130"
+          },
+          {
+            "callee": "setSound",
+            "receiver_type": "NotificationChannel",
+            "lang": "java",
+            "line": "L131"
+          },
+          {
+            "callee": "createNotificationChannel",
+            "receiver_type": "NotificationManager",
+            "lang": "java",
+            "line": "L135"
+          }
+        ]
+      },
+      "norm_label": ".createnotificationchannel()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L120"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_oncreate",
+      "label": ".onCreate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "i",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L47"
+          }
+        ]
+      },
+      "norm_label": ".oncreate()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L41"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_registernetworkmonitoring",
+      "label": ".registerNetworkMonitoring()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "registerNetworkCallback",
+            "receiver_type": "ConnectivityManager",
+            "lang": "java",
+            "line": "L113"
+          },
+          {
+            "callee": "e",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L116"
+          }
+        ]
+      },
+      "norm_label": ".registernetworkmonitoring()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L88"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onbind",
+      "label": ".onBind()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "android.content.Intent",
+      "file_type": "code",
+      "norm_label": ".onbind()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L177"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_ondestroy",
+      "label": ".onDestroy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "android.content.Intent",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "isHeld",
+            "receiver_type": "WakeLock",
+            "lang": "java",
+            "line": "L168"
+          },
+          {
+            "callee": "release",
+            "receiver_type": "WakeLock",
+            "lang": "java",
+            "line": "L168"
+          },
+          {
+            "callee": "isHeld",
+            "receiver_type": "WifiLock",
+            "lang": "java",
+            "line": "L169"
+          },
+          {
+            "callee": "release",
+            "receiver_type": "WifiLock",
+            "lang": "java",
+            "line": "L169"
+          },
+          {
+            "callee": "unregisterNetworkCallback",
+            "receiver_type": "ConnectivityManager",
+            "lang": "java",
+            "line": "L171"
+          },
+          {
+            "callee": "i",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L174"
+          }
+        ]
+      },
+      "norm_label": ".ondestroy()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L164"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onstartcommand",
+      "label": ".onStartCommand()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "android.content.Intent",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "e",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L56"
+          }
+        ]
+      },
+      "norm_label": ".onstartcommand()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L50"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onactivityresult",
+      "label": ".onActivityResult()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "android.content.Intent",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getData",
+            "receiver_type": "Intent",
+            "lang": "java",
+            "line": "L209"
+          },
+          {
+            "callee": "getClipData",
+            "receiver_type": "Intent",
+            "lang": "java",
+            "line": "L211"
+          },
+          {
+            "callee": "onReceiveValue",
+            "receiver_type": "ValueCallback",
+            "lang": "java",
+            "line": "L219"
+          }
+        ]
+      },
+      "norm_label": ".onactivityresult()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L203"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewindowdecorations",
+      "label": ".configureWindowDecorations()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "clearFlags",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L71"
+          },
+          {
+            "callee": "addFlags",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L72"
+          },
+          {
+            "callee": "setStatusBarColor",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L73"
+          },
+          {
+            "callee": "setNavigationBarColor",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L74"
+          },
+          {
+            "callee": "setDecorFitsSystemWindows",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L77"
+          }
+        ]
+      },
+      "norm_label": ".configurewindowdecorations()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L69"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "label": ".onCreate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getMainLooper",
+            "receiver_type": "Looper",
+            "lang": "java",
+            "line": "L55"
+          },
+          {
+            "callee": "loadUrl",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L61"
+          },
+          {
+            "callee": "restoreState",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L63"
+          }
+        ]
+      },
+      "norm_label": ".oncreate()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L45"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startpersistentservice",
+      "label": ".startPersistentService()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "e",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L91"
+          }
+        ]
+      },
+      "norm_label": ".startpersistentservice()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L81"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startwatchdogloop",
+      "label": ".startWatchdogLoop()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "postDelayed",
+            "receiver_type": "Handler",
+            "lang": "java",
+            "line": "L310"
+          }
+        ]
+      },
+      "norm_label": ".startwatchdogloop()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L309"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_setnetworklistener",
+      "label": ".setNetworkListener()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": ".setnetworklistener()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L37"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener_onnetworkavailable",
+      "label": ".onNetworkAvailable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": ".onnetworkavailable()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L31"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener_onnetworklost",
+      "label": ".onNetworkLost()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": ".onnetworklost()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L32"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_ondestroy",
+      "label": ".onDestroy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": ".ondestroy()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L366"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewebview",
+      "label": ".configureWebView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": ".configureWebView",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getSettings",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L97"
+          },
+          {
+            "callee": "setJavaScriptEnabled",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L98"
+          },
+          {
+            "callee": "setDomStorageEnabled",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L99"
+          },
+          {
+            "callee": "setDatabaseEnabled",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L100"
+          },
+          {
+            "callee": "setCacheMode",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L101"
+          },
+          {
+            "callee": "setSupportZoom",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L102"
+          },
+          {
+            "callee": "setBuiltInZoomControls",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L103"
+          },
+          {
+            "callee": "setDisplayZoomControls",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L104"
+          },
+          {
+            "callee": "setUseWideViewPort",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L105"
+          },
+          {
+            "callee": "setLoadWithOverviewMode",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L106"
+          },
+          {
+            "callee": "setAllowFileAccess",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L107"
+          },
+          {
+            "callee": "setAllowContentAccess",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L108"
+          },
+          {
+            "callee": "setMediaPlaybackRequiresUserGesture",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L109"
+          },
+          {
+            "callee": "setMixedContentMode",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L112"
+          },
+          {
+            "callee": "getUserAgentString",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L117"
+          },
+          {
+            "callee": "setUserAgentString",
+            "receiver_type": "WebSettings",
+            "lang": "java",
+            "line": "L119"
+          },
+          {
+            "callee": "getInstance",
+            "receiver_type": "CookieManager",
+            "lang": "java",
+            "line": "L121"
+          },
+          {
+            "callee": "setAcceptCookie",
+            "receiver_type": "CookieManager",
+            "lang": "java",
+            "line": "L122"
+          },
+          {
+            "callee": "setAcceptThirdPartyCookies",
+            "receiver_type": "CookieManager",
+            "lang": "java",
+            "line": "L124"
+          },
+          {
+            "callee": "setBackgroundColor",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L127"
+          },
+          {
+            "callee": "addJavascriptInterface",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L128"
+          },
+          {
+            "callee": "setWebViewClient",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L130"
+          },
+          {
+            "callee": "setWebChromeClient",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L131"
+          }
+        ]
+      },
+      "norm_label": ".configurewebview()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L95"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
+      "label": ".onShowFileChooser()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".onShowFileChooser",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "createIntent",
+            "receiver_type": "FileChooserParams",
+            "lang": "java",
+            "line": "L193"
+          }
+        ]
+      },
+      "norm_label": ".onshowfilechooser()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L185"
+    },
+    {
+      "id": "android_graphics_bitmap",
+      "label": "android.graphics.Bitmap",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": "android.graphics.bitmap",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_webresourceerror",
+      "label": "android.webkit.WebResourceError",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": "android.webkit.webresourceerror",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_webresourcerequest",
+      "label": "android.webkit.WebResourceRequest",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": "android.webkit.webresourcerequest",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_webview",
+      "label": "android.webkit.WebView",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": "android.webkit.webview",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_webviewclient",
+      "label": "android.webkit.WebViewClient",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": "android.webkit.webviewclient",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_intent",
+      "label": "Intent",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": "intent",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "label": "Override",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Override",
+      "file_type": "code",
+      "norm_label": "override",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_javascriptinterface",
+      "label": "android.webkit.JavascriptInterface",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "AntigravityNativeBridge",
+      "file_type": "code",
+      "norm_label": "android.webkit.javascriptinterface",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_app_notification",
+      "label": "android.app.Notification",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": ".buildNotification",
+      "file_type": "code",
+      "norm_label": "android.app.notification",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_intent",
+      "label": "Intent",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": ".buildNotification",
+      "file_type": "code",
+      "norm_label": "intent",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_app_service",
+      "label": "android.app.Service",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "KeepAliveService.java",
+      "file_type": "code",
+      "norm_label": "android.app.service",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_net_connectivitymanager",
+      "label": "android.net.ConnectivityManager",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "KeepAliveService.java",
+      "file_type": "code",
+      "norm_label": "android.net.connectivitymanager",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
+      "label": "KeepAliveService.java",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "KeepAliveService.java",
+      "file_type": "code",
+      "norm_label": "keepaliveservice.java",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "networkcallback",
+      "label": "NetworkCallback",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "networkcallback",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "wakelock",
+      "label": "WakeLock",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "wakelock",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "wifilock",
+      "label": "WifiLock",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "wifilock",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_content_intent",
+      "label": "android.content.Intent",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "android.content.Intent",
+      "file_type": "code",
+      "norm_label": "android.content.intent",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_os_ibinder",
+      "label": "android.os.IBinder",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "android.content.Intent",
+      "file_type": "code",
+      "norm_label": "android.os.ibinder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_override",
+      "label": "Override",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "android.content.Intent",
+      "file_type": "code",
+      "norm_label": "override",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "handler",
+      "label": "Handler",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "norm_label": "handler",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_app_activity",
+      "label": "android.app.Activity",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "MainActivity.java",
+      "file_type": "code",
+      "norm_label": "android.app.activity",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_os_bundle",
+      "label": "android.os.Bundle",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "MainActivity.java",
+      "file_type": "code",
+      "norm_label": "android.os.bundle",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_os_handler",
+      "label": "android.os.Handler",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "MainActivity.java",
+      "file_type": "code",
+      "norm_label": "android.os.handler",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_widget_progressbar",
+      "label": "android.widget.ProgressBar",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "MainActivity.java",
+      "file_type": "code",
+      "norm_label": "android.widget.progressbar",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "label": "MainActivity.java",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "MainActivity.java",
+      "file_type": "code",
+      "norm_label": "mainactivity.java",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_annotation_suppresslint",
+      "label": "android.annotation.SuppressLint",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": ".configureWebView",
+      "file_type": "code",
+      "norm_label": "android.annotation.suppresslint",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_webchromeclient",
+      "label": "android.webkit.WebChromeClient",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": ".configureWebView",
+      "file_type": "code",
+      "norm_label": "android.webkit.webchromeclient",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_net_uri",
+      "label": "android.net.Uri",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".onShowFileChooser",
+      "file_type": "code",
+      "norm_label": "android.net.uri",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_valuecallback",
+      "label": "android.webkit.ValueCallback",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".onShowFileChooser",
+      "file_type": "code",
+      "norm_label": "android.webkit.valuecallback",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "filechooserparams",
+      "label": "FileChooserParams",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".onShowFileChooser",
+      "file_type": "code",
+      "norm_label": "filechooserparams",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "build_apk",
+      "label": "build_apk.sh",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "build_apk.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "build_apk.sh",
+      "source_file": "build_apk.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "build_apk_java_home",
+      "label": "JAVA_HOME",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "build_apk.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "norm_label": "java_home",
+      "source_file": "build_apk.sh",
+      "source_location": "L4"
+    },
+    {
+      "id": "build_apk_path",
+      "label": "PATH",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "build_apk.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "norm_label": "path",
+      "source_file": "build_apk.sh",
+      "source_location": "L5"
+    },
+    {
+      "id": "build_apk_sh__entry",
+      "label": "build_apk.sh script",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "build_apk.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "build_apk.sh script",
+      "source_file": "build_apk.sh",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onbind",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_ondestroy",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L164",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onstartcommand",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_log",
+      "target": "android_webkit_javascriptinterface",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_oninstancedisconnected",
+      "target": "android_webkit_javascriptinterface",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L228",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_onsocketclosed",
+      "target": "android_webkit_javascriptinterface",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onprogresschanged",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagefinished",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagestarted",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onreceivederror",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_shouldoverrideurlloading",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewebview",
+      "target": "android_annotation_suppresslint",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onactivityresult",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onbackpressed",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L339",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "target": "android_annotation_suppresslint",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_ondestroy",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L366",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworkavailable",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L321",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworklost",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L334",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onpause",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L358",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onresume",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L349",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_buildnotification",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_intent",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_createnotificationchannel",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_acquirelocks",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_registernetworkmonitoring",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onstartcommand",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_buildnotification",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_registernetworkmonitoring",
+      "target": "networkcallback",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_oninstancedisconnected",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_performsmartreconnect",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L231",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_onsocketclosed",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_performsmartreconnect",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagefinished",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_injectwatchdogscript",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_shouldoverrideurlloading",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_intent",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewebview",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewebview",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewebview",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewindowdecorations",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "target": "handler",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startpersistentservice",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewebview",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startwatchdogloop",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_ondestroy",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_setnetworklistener",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L369",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworkavailable",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_performsmartreconnect",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L329",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_performsmartreconnect",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_isnetworkconnected",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L288",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startpersistentservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_setnetworklistener",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startpersistentservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_intent",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "wakelock",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "wifilock",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "android_net_connectivitymanager",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "networkcallback",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "android_webkit_webview",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "android_widget_progressbar",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "android_os_handler",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "android_webkit_valuecallback",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
+      "target": "android_net_uri",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "android_net_uri",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
+      "target": "android_net_connectivitymanager",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
+      "target": "android_os_ibinder",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
+      "target": "android_app_notification",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
+      "target": "android_app_service",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
+      "target": "android_content_intent",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_net_uri",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_os_bundle",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_os_handler",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_webkit_javascriptinterface",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_webkit_valuecallback",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_webkit_webchromeclient",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_webkit_webresourceerror",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_webkit_webresourcerequest",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_webkit_webview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_webkit_webviewclient",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_widget_progressbar",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_annotation_suppresslint",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_app_activity",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_content_intent",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_graphics_bitmap",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "android_net_connectivitymanager",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onbind",
+      "target": "android_content_intent",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onstartcommand",
+      "target": "android_content_intent",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_setnetworklistener",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onprogresschanged",
+      "target": "android_webkit_webview",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
+      "target": "android_webkit_valuecallback",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
+      "target": "android_webkit_webview",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
+      "target": "filechooserparams",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagefinished",
+      "target": "android_webkit_webview",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagestarted",
+      "target": "android_graphics_bitmap",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagestarted",
+      "target": "android_webkit_webview",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onreceivederror",
+      "target": "android_webkit_webresourceerror",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onreceivederror",
+      "target": "android_webkit_webresourcerequest",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onreceivederror",
+      "target": "android_webkit_webview",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_shouldoverrideurlloading",
+      "target": "android_webkit_webresourcerequest",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_shouldoverrideurlloading",
+      "target": "android_webkit_webview",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onactivityresult",
+      "target": "android_content_intent",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "target": "android_os_bundle",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_buildnotification",
+      "target": "android_app_notification",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onbind",
+      "target": "android_os_ibinder",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "build_apk",
+      "target": "build_apk_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build_apk.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L227",
+      "weight": 1.0
+    },
+    {
+      "source": "build_apk",
+      "target": "build_apk_java_home",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build_apk.sh",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "build_apk",
+      "target": "build_apk_path",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build_apk.sh",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener",
+      "relation": "implements",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "android_app_service",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient",
+      "target": "android_webkit_webchromeclient",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
+      "target": "android_webkit_webviewclient",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "android_app_activity",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_createnotificationchannel",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_buildnotification",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_ondestroy",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L164",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onbind",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_setnetworklistener",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_oncreate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onstartcommand",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_acquirelocks",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_registernetworkmonitoring",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener_onnetworkavailable",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener",
+      "target": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener_onnetworklost",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_oninstancedisconnected",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L228",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_onsocketclosed",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_log",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onprogresschanged",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagestarted",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagefinished",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onreceivederror",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_shouldoverrideurlloading",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onactivityresult",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_injectwatchdogscript",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L248",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_performsmartreconnect",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_isnetworkconnected",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L298",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startwatchdogloop",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L309",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworkavailable",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L321",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworklost",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L334",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onbackpressed",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L339",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onresume",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L349",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onpause",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L358",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_ondestroy",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L366",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewindowdecorations",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startpersistentservice",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "target": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewebview",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L95",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

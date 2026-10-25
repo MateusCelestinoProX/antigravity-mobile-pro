@@ -1,0 +1,14 @@
+{
+  "0": "Override",
+  "1": "AntigravityNativeBridge",
+  "2": "KeepAliveService",
+  "3": "android.content.Intent",
+  "4": "MainActivity",
+  "5": "MainActivity.java",
+  "6": "NetworkStateListener",
+  "7": ".configureWebView",
+  "8": ".onShowFileChooser",
+  "9": "build_apk.sh",
+  "10": ".buildNotification",
+  "11": "KeepAliveService.java"
+}

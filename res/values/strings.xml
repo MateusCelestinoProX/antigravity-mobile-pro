@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Antigravity</string>
+    <string name="service_notification_title">Antigravity Link Ativo</string>
+    <string name="service_notification_desc">Sincronização de alta estabilidade com Mac OS</string>
+</resources>
