@@ -1,8 +1,8 @@
 {
   "build_apk.sh": {
-    "mtime": 1792951910.651674,
-    "seen": 1792951931.8334022,
-    "ast_hash": "4f29132e1bce2a30230d3a7fae6d8e21",
+    "mtime": 1792962064.4963665,
+    "seen": 1792962117.1389399,
+    "ast_hash": "08e461153e3d0e2cef0bfd0c12ab75e3",
     "semantic_hash": ""
   },
   "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java": {
@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   "src/com/mateuscelestino/antigravitymobile/MainActivity.java": {
-    "mtime": 1792952361.940852,
-    "seen": 1792952469.7695549,
-    "ast_hash": "1230117ecb7f34d4d3e59fb632bf5762",
+    "mtime": 1792962093.3035083,
+    "seen": 1792962117.138944,
+    "ast_hash": "9de23c79a4772061d3d8ec8a7da7c59e",
     "semantic_hash": ""
   },
   "res/drawable/ic_launcher.png": {
@@ -63,6 +63,18 @@
     "mtime": 1792952008.5001688,
     "seen": 1792952469.769566,
     "ast_hash": "fde589a36a616adfa70410c7662d762e",
+    "semantic_hash": ""
+  },
+  "assets/session_cookies.json": {
+    "mtime": 1792962040.814346,
+    "seen": 1792962117.138937,
+    "ast_hash": "35a738c8dd4525eb235a5ff2fe4c69aa",
+    "semantic_hash": ""
+  },
+  "src/com/mateuscelestino/antigravitymobile/SessionMigrator.java": {
+    "mtime": 1792962054.2051692,
+    "seen": 1792962117.138945,
+    "ast_hash": "14209b795d347f9b8d5ed75c95ba68c9",
     "semantic_hash": ""
   }
 }

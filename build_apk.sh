@@ -25,6 +25,7 @@ echo "=== [3/6] Vinculando APK e gerando R.java ==="
 $BUILD_TOOLS/aapt2 link -I "$ANDROID_JAR" \
   --manifest AndroidManifest.xml \
   -o build/app-res.apk \
+  -A assets \
   build/compiled_res.zip \
   --java build/gen
 
@@ -33,6 +34,7 @@ javac -cp "$ANDROID_JAR:build/gen" \
   -d build/classes \
   build/gen/com/mateuscelestino/antigravitymobile/R.java \
   src/com/mateuscelestino/antigravitymobile/KeepAliveService.java \
+  src/com/mateuscelestino/antigravitymobile/SessionMigrator.java \
   src/com/mateuscelestino/antigravitymobile/MainActivity.java
 
 echo "=== [5/6] Gerando Dex bytecode com D8 ==="

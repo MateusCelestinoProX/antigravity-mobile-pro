@@ -35,7 +35,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements KeepAliveService.NetworkStateListener {
     private static final String TAG = "AntigravityMainActivity";
-    private static final String TARGET_URL = "https://antigravity.google.com";
+    private static final String TARGET_URL = "https://antigravity.google.com/u/1/?pli=1";
 
     private WebView webView;
     private ProgressBar progressBar;
@@ -146,6 +146,9 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
             cookieManager.setAcceptThirdPartyCookies(webView, true);
         }
 
+        // Migração e injeção automática de todas as credenciais oficiais da conta Pro
+        SessionMigrator.applySessionCookies(this);
+
         webView.setBackgroundColor(Color.BLACK);
         webView.addJavascriptInterface(new AntigravityNativeBridge(), "AntigravityNative");
 
@@ -219,6 +222,7 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
             progressBar.setVisibility(View.GONE);
+            view.evaluateJavascript("try { sessionStorage.setItem('agy.oauth.last_session_index', '1'); } catch(e){}", null);
             CookieManager.getInstance().flush();
             injectWatchdogScript();
         }
