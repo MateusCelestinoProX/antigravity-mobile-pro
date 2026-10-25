@@ -13,7 +13,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.util.Log;
+import android.view.HapticFeedbackConstants;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -36,8 +40,15 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
     private WebView webView;
     private ProgressBar progressBar;
     private Handler handler;
+    private Vibrator vibrator;
     private ValueCallback<Uri[]> filePathCallback;
     private static final int FILE_CHOOSER_REQUEST_CODE = 2026;
+
+    // Variáveis de controle de toque e Pull-to-Refresh nativo
+    private float touchStartY = 0;
+    private boolean isPulling = false;
+    private static final float PULL_THRESHOLD_DP = 130f;
+    private float pullThresholdPx;
 
     private boolean isReconnecting = false;
     private long lastReconnectTime = 0;
@@ -50,12 +61,16 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         configureWindowDecorations();
         setContentView(R.layout.activity_main);
 
+        pullThresholdPx = PULL_THRESHOLD_DP * getResources().getDisplayMetrics().density;
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
         webView = findViewById(R.id.webview);
         progressBar = findViewById(R.id.progress_bar);
         handler = new Handler(Looper.getMainLooper());
 
         startPersistentService();
         configureWebView();
+        configureTouchAndGestures();
 
         if (savedInstanceState == null) {
             webView.loadUrl(TARGET_URL);
@@ -64,6 +79,7 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         }
 
         startWatchdogLoop();
+        startStealthRadioKeepAlive();
     }
 
     private void configureWindowDecorations() {
@@ -92,7 +108,7 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         }
     }
 
-    @SuppressLint("SetJavaScriptEnabled")
+    @SuppressLint({"SetJavaScriptEnabled", "ClickableViewAccessibility"})
     private void configureWebView() {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
@@ -108,12 +124,18 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
 
+        // Otimização de renderização para telas de alta taxa (120Hz do S22 Ultra)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            settings.setSafeBrowsingEnabled(true);
+        }
+        webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+            settings.setOffscreenPreRaster(true); // Pré-rasterização para rolagem 120Hz sem engasgos
         }
 
-        // Sanitização de User-Agent: remove o marcador "; wv" (WebView) para que os serviços Google
-        // identifiquem a engine como Chrome Mobile nativo, liberando login sem 403 disallowed_useragent.
+        // Sanitização de User-Agent: remove o marcador "; wv" para identificação como Chrome Mobile padrão
         String defaultUA = settings.getUserAgentString();
         String sanitizedUA = defaultUA.replace("; wv", "");
         settings.setUserAgentString(sanitizedUA);
@@ -129,6 +151,61 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
 
         webView.setWebViewClient(new AntigravityWebViewClient());
         webView.setWebChromeClient(new AntigravityWebChromeClient());
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    private void configureTouchAndGestures() {
+        // Implementação nativa de Pull-to-Refresh para a WebView
+        webView.setOnTouchListener((v, event) -> {
+            switch (event.getAction()) {
+                case MotionEvent.ACTION_DOWN:
+                    if (webView.getScrollY() == 0) {
+                        touchStartY = event.getY();
+                        isPulling = true;
+                    } else {
+                        isPulling = false;
+                    }
+                    break;
+                case MotionEvent.ACTION_MOVE:
+                    if (isPulling && webView.getScrollY() == 0) {
+                        float deltaY = event.getY() - touchStartY;
+                        if (deltaY > 0) {
+                            int progress = (int) Math.min(100, (deltaY / pullThresholdPx) * 100);
+                            progressBar.setVisibility(View.VISIBLE);
+                            progressBar.setProgress(progress);
+                            if (deltaY >= pullThresholdPx) {
+                                triggerHapticFeedback();
+                            }
+                        }
+                    }
+                    break;
+                case MotionEvent.ACTION_UP:
+                case MotionEvent.ACTION_CANCEL:
+                    if (isPulling) {
+                        float deltaY = event.getY() - touchStartY;
+                        if (deltaY >= pullThresholdPx && webView.getScrollY() == 0) {
+                            Log.i(TAG, "Pull-to-refresh disparado pelo usuário.");
+                            triggerHapticFeedback();
+                            performSmartReconnect(true);
+                        } else {
+                            progressBar.setVisibility(View.GONE);
+                        }
+                        isPulling = false;
+                    }
+                    break;
+            }
+            return false;
+        });
+    }
+
+    private void triggerHapticFeedback() {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && vibrator != null) {
+                vibrator.vibrate(VibrationEffect.createOneShot(20, VibrationEffect.DEFAULT_AMPLITUDE));
+            } else if (webView != null) {
+                webView.performHapticFeedback(HapticFeedbackConstants.CLOCK_TICK);
+            }
+        } catch (Exception ignored) {}
     }
 
     private class AntigravityWebViewClient extends WebViewClient {
@@ -159,9 +236,8 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
             Uri uri = request.getUrl();
             String host = uri.getHost();
             if (host != null && (host.endsWith("google.com") || host.endsWith("googleusercontent.com") || host.endsWith("googleapis.com"))) {
-                return false; // Permite navegação interna no WebView
+                return false;
             }
-            // Links externos abrem no navegador do sistema
             try {
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
@@ -227,15 +303,15 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
     public class AntigravityNativeBridge {
         @JavascriptInterface
         public void onInstanceDisconnected() {
-            Log.w(TAG, "[Bridge] Mensagem 'Instance disconnected' detectada.");
-            handler.post(() -> performSmartReconnect());
+            Log.w(TAG, "[Bridge] Notificação 'Instance disconnected' recebida do DOM.");
+            handler.post(() -> performSmartReconnect(false));
         }
 
         @JavascriptInterface
         public void onSocketClosed(int code) {
-            Log.w(TAG, "[Bridge] WebSocket fechado com código: " + code);
-            if (code == 1006 || code == 1001) {
-                handler.postDelayed(() -> performSmartReconnect(), 1000);
+            Log.w(TAG, "[Bridge] WebSocket fechado: " + code);
+            if (code == 1006 || code == 1001 || code == 1005) {
+                handler.postDelayed(() -> performSmartReconnect(false), 800);
             }
         }
 
@@ -249,9 +325,9 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         String js = "(function() {\n" +
                 "  if (window.__antigravitySentinelInjected) return;\n" +
                 "  window.__antigravitySentinelInjected = true;\n" +
-                "  console.log('[Sentinel] Injected into Antigravity Mobile.');\n" +
+                "  console.log('[Sentinel Pro v2.6] Ativado com monitoramento resiliente.');\n" +
                 "  \n" +
-                "  // Interceptor de WebSocket para notificar o app nativo\n" +
+                "  // 1. Interceptor de WebSocket nativo\n" +
                 "  if (window.WebSocket) {\n" +
                 "    const OriginalWS = window.WebSocket;\n" +
                 "    window.WebSocket = function(...args) {\n" +
@@ -264,35 +340,61 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
                 "    window.WebSocket.prototype = OriginalWS.prototype;\n" +
                 "  }\n" +
                 "  \n" +
-                "  // Monitor contínuo de desconexão da instância no DOM\n" +
+                "  // 2. Auto-recuperação do botão de Reconexão no DOM\n" +
                 "  setInterval(function() {\n" +
+                "    // Tenta encontrar botões de reconexão ou retry automáticos\n" +
+                "    const buttons = document.querySelectorAll('button, [role=\"button\"]');\n" +
+                "    for (let i = 0; i < buttons.length; i++) {\n" +
+                "      const label = (buttons[i].innerText || buttons[i].getAttribute('aria-label') || '').toLowerCase();\n" +
+                "      if (label.includes('reconnect') || label.includes('retry') || label.includes('reconectar') || label.includes('tentar novamente')) {\n" +
+                "        console.log('[Sentinel] Auto-clicando no botão de reconexão...');\n" +
+                "        buttons[i].click();\n" +
+                "        return;\n" +
+                "      }\n" +
+                "    }\n" +
+                "    \n" +
                 "    const text = document.body ? document.body.innerText : '';\n" +
                 "    if (text.includes('Instance disconnected') || text.includes('Waiting for connection or Wi-Fi to resume')) {\n" +
                 "      if (window.AntigravityNative) {\n" +
                 "        window.AntigravityNative.onInstanceDisconnected();\n" +
                 "      }\n" +
                 "    }\n" +
-                "  }, 2000);\n" +
+                "  }, 1800);\n" +
                 "})();";
 
         webView.evaluateJavascript(js, null);
     }
 
-    private void performSmartReconnect() {
+    private void performSmartReconnect(boolean force) {
         long now = System.currentTimeMillis();
-        if (now - lastReconnectTime < 4000) {
-            return; // Debounce de 4 segundos para evitar spam de reload
+        long minInterval = force ? 1500 : 3500;
+        if (now - lastReconnectTime < minInterval) {
+            return;
         }
         lastReconnectTime = now;
 
         if (isNetworkConnected()) {
             Log.i(TAG, "Rede ativa. Disparando soft-reconnect do Antigravity...");
             Toast.makeText(this, "Reconectando instância Antigravity...", Toast.LENGTH_SHORT).show();
-            // Dispara reload suave preservando cookies
             webView.reload();
         } else {
-            Log.w(TAG, "Sem rede no momento. Aguardando sinal para reconectar.");
+            Log.w(TAG, "Sem rede no momento. Aguardando conectividade.");
         }
+    }
+
+    // Mantém a camada de rádio celular e Wi-Fi sempre ativas (evita expiração da tabela NAT da operadora/roteador)
+    private void startStealthRadioKeepAlive() {
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (webView != null && isNetworkConnected()) {
+                    // Executa um fetch ultraleve sem CORS para favicon que refresca a tabela NAT sem travar a thread
+                    String keepAliveJs = "fetch('https://antigravity.google.com/favicon.ico', { mode: 'no-cors', cache: 'no-store' }).catch(function(){});";
+                    webView.evaluateJavascript(keepAliveJs, null);
+                }
+                handler.postDelayed(this, 18000); // Executa a cada 18 segundos
+            }
+        }, 10000);
     }
 
     private boolean isNetworkConnected() {
@@ -313,9 +415,9 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
                 if (webView != null) {
                     injectWatchdogScript();
                 }
-                handler.postDelayed(this, 10000);
+                handler.postDelayed(this, 8000);
             }
-        }, 10000);
+        }, 8000);
     }
 
     @Override
@@ -326,7 +428,7 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
             if (currentUrl == null || currentUrl.isEmpty() || currentUrl.startsWith("data:") || currentUrl.startsWith("about:blank")) {
                 webView.loadUrl(TARGET_URL);
             } else {
-                performSmartReconnect();
+                performSmartReconnect(true);
             }
         });
     }
@@ -341,7 +443,6 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
-            // Em vez de finalizar o app e destruir a sessão de background, move para segundo plano
             moveTaskToBack(true);
         }
     }

@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   "src/com/mateuscelestino/antigravitymobile/MainActivity.java": {
-    "mtime": 1792951883.7725646,
-    "seen": 1792951931.833407,
-    "ast_hash": "0064429cb8ef0fffda0e992d2d43aef4",
+    "mtime": 1792952361.940852,
+    "seen": 1792952469.7695549,
+    "ast_hash": "1230117ecb7f34d4d3e59fb632bf5762",
     "semantic_hash": ""
   },
   "res/drawable/ic_launcher.png": {
@@ -57,6 +57,12 @@
     "mtime": 1792951792.013339,
     "seen": 1792951931.8334131,
     "ast_hash": "209dddc94aa711e7c59792a043dbd9f9",
+    "semantic_hash": ""
+  },
+  "screen_test.png": {
+    "mtime": 1792952008.5001688,
+    "seen": 1792952469.769566,
+    "ast_hash": "fde589a36a616adfa70410c7662d762e",
     "semantic_hash": ""
   }
 }
