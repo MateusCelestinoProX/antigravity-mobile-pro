@@ -1,0 +1,14 @@
+# Build & Output
+build/
+dist/
+*.idsig
+
+# Sensitive Credentials & Local Keystores
+*.keystore
+assets/session_cookies.json
+
+# IDE & OS Files
+.DS_Store
+Thumbs.db
+*.log
+screen_test*.png

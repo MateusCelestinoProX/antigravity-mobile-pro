@@ -4,26 +4,13 @@
   "graph": {},
   "nodes": [
     {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge",
-      "label": "AntigravityNativeBridge",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": ".performSmartReconnect",
-      "file_type": "code",
-      "norm_label": "antigravitynativebridge",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L307"
-    },
-    {
       "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient",
       "label": "AntigravityWebViewClient",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "AntigravityWebViewClient",
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
       "norm_label": "antigravitywebviewclient",
       "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
@@ -43,6 +30,19 @@
       "source_location": "L20"
     },
     {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
+      "label": "MainActivity",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "norm_label": "mainactivity",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L36"
+    },
+    {
       "id": "src_com_mateuscelestino_antigravitymobile_sessionmigrator_sessionmigrator",
       "label": "SessionMigrator",
       "_callable": true,
@@ -56,17 +56,17 @@
       "source_location": "L11"
     },
     {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity",
-      "label": "MainActivity",
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge",
+      "label": "AntigravityNativeBridge",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "MainActivity",
+      "community_name": ".onCreate",
       "file_type": "code",
-      "norm_label": "mainactivity",
+      "norm_label": "antigravitynativebridge",
       "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L36"
+      "source_location": "L307"
     },
     {
       "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener",
@@ -88,251 +88,19 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "android.webkit.WebView",
+      "community_name": ".onShowFileChooser",
       "file_type": "code",
       "norm_label": "antigravitywebchromeclient",
       "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
       "source_location": "L255"
     },
     {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagestarted",
-      "label": ".onPageStarted()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": ".onPageStarted",
-      "file_type": "code",
-      "norm_label": ".onpagestarted()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L215"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_log",
-      "label": ".log()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": ".performSmartReconnect",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "d",
-            "receiver_type": "Log",
-            "lang": "java",
-            "line": "L324"
-          }
-        ]
-      },
-      "norm_label": ".log()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L322"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_oninstancedisconnected",
-      "label": ".onInstanceDisconnected()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": ".performSmartReconnect",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "w",
-            "receiver_type": "Log",
-            "lang": "java",
-            "line": "L310"
-          }
-        ]
-      },
-      "norm_label": ".oninstancedisconnected()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L308"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_onsocketclosed",
-      "label": ".onSocketClosed()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": ".performSmartReconnect",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "w",
-            "receiver_type": "Log",
-            "lang": "java",
-            "line": "L316"
-          }
-        ]
-      },
-      "norm_label": ".onsocketclosed()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L314"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_isnetworkconnected",
-      "label": ".isNetworkConnected()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": ".performSmartReconnect",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "getActiveNetworkInfo",
-            "receiver_type": "ConnectivityManager",
-            "lang": "java",
-            "line": "L408"
-          },
-          {
-            "callee": "isConnected",
-            "receiver_type": "NetworkInfo",
-            "lang": "java",
-            "line": "L409"
-          }
-        ]
-      },
-      "norm_label": ".isnetworkconnected()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L404"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworkavailable",
-      "label": ".onNetworkAvailable()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": ".performSmartReconnect",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "i",
-            "receiver_type": "Log",
-            "lang": "java",
-            "line": "L429"
-          },
-          {
-            "callee": "post",
-            "receiver_type": "Handler",
-            "lang": "java",
-            "line": "L430"
-          },
-          {
-            "callee": "getUrl",
-            "receiver_type": "WebView",
-            "lang": "java",
-            "line": "L431"
-          },
-          {
-            "callee": "loadUrl",
-            "receiver_type": "WebView",
-            "lang": "java",
-            "line": "L433"
-          }
-        ]
-      },
-      "norm_label": ".onnetworkavailable()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L427"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_performsmartreconnect",
-      "label": ".performSmartReconnect()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": ".performSmartReconnect",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "currentTimeMillis",
-            "receiver_type": "System",
-            "lang": "java",
-            "line": "L373"
-          },
-          {
-            "callee": "i",
-            "receiver_type": "Log",
-            "lang": "java",
-            "line": "L381"
-          },
-          {
-            "callee": "makeText",
-            "receiver_type": "Toast",
-            "lang": "java",
-            "line": "L382"
-          },
-          {
-            "callee": "reload",
-            "receiver_type": "WebView",
-            "lang": "java",
-            "line": "L383"
-          },
-          {
-            "callee": "w",
-            "receiver_type": "Log",
-            "lang": "java",
-            "line": "L385"
-          }
-        ]
-      },
-      "norm_label": ".performsmartreconnect()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L372"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_buildnotification",
-      "label": ".buildNotification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": ".buildNotification",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "setFlags",
-            "receiver_type": "Intent",
-            "lang": "java",
-            "line": "L142"
-          },
-          {
-            "callee": "getActivity",
-            "receiver_type": "PendingIntent",
-            "lang": "java",
-            "line": "L143"
-          },
-          {
-            "callee": "setContentTitle",
-            "receiver_type": "Builder",
-            "lang": "java",
-            "line": "L155"
-          },
-          {
-            "callee": "build",
-            "receiver_type": "Builder",
-            "lang": "java",
-            "line": "L161"
-          }
-        ]
-      },
-      "norm_label": ".buildnotification()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
-      "source_location": "L140"
-    },
-    {
       "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagefinished",
       "label": ".onPageFinished()",
       "_callable": true,
       "_origin": "ast",
-      "community": 12,
-      "community_name": ".onPageFinished",
+      "community": 13,
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -355,26 +123,16 @@
       "source_location": "L221"
     },
     {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_injectwatchdogscript",
-      "label": ".injectWatchdogScript()",
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onpagestarted",
+      "label": ".onPageStarted()",
       "_callable": true,
       "_origin": "ast",
-      "community": 12,
-      "community_name": ".onPageFinished",
+      "community": 13,
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "evaluateJavascript",
-            "receiver_type": "WebView",
-            "lang": "java",
-            "line": "L369"
-          }
-        ]
-      },
-      "norm_label": ".injectwatchdogscript()",
+      "norm_label": ".onpagestarted()",
       "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L328"
+      "source_location": "L215"
     },
     {
       "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebviewclient_onreceivederror",
@@ -382,7 +140,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "AntigravityWebViewClient",
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -416,7 +174,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "AntigravityWebViewClient",
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -437,6 +195,28 @@
       "norm_label": ".shouldoverrideurlloading()",
       "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
       "source_location": "L238"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_injectwatchdogscript",
+      "label": ".injectWatchdogScript()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "android.webkit.WebView",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "evaluateJavascript",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L369"
+          }
+        ]
+      },
+      "norm_label": ".injectwatchdogscript()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L328"
     },
     {
       "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_acquirelocks",
@@ -503,6 +283,46 @@
       "source_location": "L61"
     },
     {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_buildnotification",
+      "label": ".buildNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "setFlags",
+            "receiver_type": "Intent",
+            "lang": "java",
+            "line": "L142"
+          },
+          {
+            "callee": "getActivity",
+            "receiver_type": "PendingIntent",
+            "lang": "java",
+            "line": "L143"
+          },
+          {
+            "callee": "setContentTitle",
+            "receiver_type": "Builder",
+            "lang": "java",
+            "line": "L155"
+          },
+          {
+            "callee": "build",
+            "receiver_type": "Builder",
+            "lang": "java",
+            "line": "L161"
+          }
+        ]
+      },
+      "norm_label": ".buildnotification()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L140"
+    },
+    {
       "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_createnotificationchannel",
       "label": ".createNotificationChannel()",
       "_callable": true,
@@ -555,6 +375,18 @@
       "source_location": "L120"
     },
     {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onbind",
+      "label": ".onBind()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": ".onbind()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L177"
+    },
+    {
       "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_oncreate",
       "label": ".onCreate()",
       "_callable": true,
@@ -577,52 +409,12 @@
       "source_location": "L41"
     },
     {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_registernetworkmonitoring",
-      "label": ".registerNetworkMonitoring()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "KeepAliveService",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "registerNetworkCallback",
-            "receiver_type": "ConnectivityManager",
-            "lang": "java",
-            "line": "L113"
-          },
-          {
-            "callee": "e",
-            "receiver_type": "Log",
-            "lang": "java",
-            "line": "L116"
-          }
-        ]
-      },
-      "norm_label": ".registernetworkmonitoring()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
-      "source_location": "L88"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_onbind",
-      "label": ".onBind()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "android.content.Intent",
-      "file_type": "code",
-      "norm_label": ".onbind()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
-      "source_location": "L177"
-    },
-    {
       "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_ondestroy",
       "label": ".onDestroy()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "android.content.Intent",
+      "community": 2,
+      "community_name": "KeepAliveService",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -673,8 +465,8 @@
       "label": ".onStartCommand()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "android.content.Intent",
+      "community": 2,
+      "community_name": "KeepAliveService",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -691,12 +483,40 @@
       "source_location": "L50"
     },
     {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_registernetworkmonitoring",
+      "label": ".registerNetworkMonitoring()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "registerNetworkCallback",
+            "receiver_type": "ConnectivityManager",
+            "lang": "java",
+            "line": "L113"
+          },
+          {
+            "callee": "e",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L116"
+          }
+        ]
+      },
+      "norm_label": ".registernetworkmonitoring()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L88"
+    },
+    {
       "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onactivityresult",
       "label": ".onActivityResult()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "android.content.Intent",
+      "community": 2,
+      "community_name": "KeepAliveService",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -750,61 +570,67 @@
             "callee": "getAssets",
             "receiver_type": "Context",
             "lang": "java",
-            "line": "L19"
+            "line": "L21"
+          },
+          {
+            "callee": "d",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L23"
           },
           {
             "callee": "length",
             "receiver_type": "JSONArray",
             "lang": "java",
-            "line": "L30"
+            "line": "L36"
           },
           {
             "callee": "getJSONObject",
             "receiver_type": "JSONArray",
             "lang": "java",
-            "line": "L31"
+            "line": "L37"
           },
           {
             "callee": "getString",
             "receiver_type": "JSONObject",
             "lang": "java",
-            "line": "L32"
+            "line": "L38"
           },
           {
             "callee": "optString",
             "receiver_type": "JSONObject",
             "lang": "java",
-            "line": "L35"
+            "line": "L41"
           },
           {
             "callee": "optBoolean",
             "receiver_type": "JSONObject",
             "lang": "java",
-            "line": "L36"
+            "line": "L42"
           },
           {
             "callee": "setCookie",
             "receiver_type": "CookieManager",
             "lang": "java",
-            "line": "L47"
+            "line": "L53"
           },
           {
             "callee": "flush",
             "receiver_type": "CookieManager",
             "lang": "java",
-            "line": "L50"
+            "line": "L56"
           },
           {
             "callee": "i",
             "receiver_type": "Log",
             "lang": "java",
-            "line": "L51"
+            "line": "L57"
           },
           {
             "callee": "e",
             "receiver_type": "Log",
             "lang": "java",
-            "line": "L53"
+            "line": "L59"
           }
         ]
       },
@@ -813,12 +639,78 @@
       "source_location": "L14"
     },
     {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_log",
+      "label": ".log()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "d",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L324"
+          }
+        ]
+      },
+      "norm_label": ".log()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L322"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_oninstancedisconnected",
+      "label": ".onInstanceDisconnected()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "w",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L310"
+          }
+        ]
+      },
+      "norm_label": ".oninstancedisconnected()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L308"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitynativebridge_onsocketclosed",
+      "label": ".onSocketClosed()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "w",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L316"
+          }
+        ]
+      },
+      "norm_label": ".onsocketclosed()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L314"
+    },
+    {
       "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configuretouchandgestures",
       "label": ".configureTouchAndGestures()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "MainActivity",
+      "community_name": ".onCreate",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -859,274 +751,12 @@
       "source_location": "L159"
     },
     {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewindowdecorations",
-      "label": ".configureWindowDecorations()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "clearFlags",
-            "receiver_type": "Window",
-            "lang": "java",
-            "line": "L87"
-          },
-          {
-            "callee": "addFlags",
-            "receiver_type": "Window",
-            "lang": "java",
-            "line": "L88"
-          },
-          {
-            "callee": "setStatusBarColor",
-            "receiver_type": "Window",
-            "lang": "java",
-            "line": "L89"
-          },
-          {
-            "callee": "setNavigationBarColor",
-            "receiver_type": "Window",
-            "lang": "java",
-            "line": "L90"
-          },
-          {
-            "callee": "setDecorFitsSystemWindows",
-            "receiver_type": "Window",
-            "lang": "java",
-            "line": "L93"
-          }
-        ]
-      },
-      "norm_label": ".configurewindowdecorations()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L85"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
-      "label": ".onCreate()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "getMainLooper",
-            "receiver_type": "Looper",
-            "lang": "java",
-            "line": "L69"
-          },
-          {
-            "callee": "loadUrl",
-            "receiver_type": "WebView",
-            "lang": "java",
-            "line": "L76"
-          },
-          {
-            "callee": "restoreState",
-            "receiver_type": "WebView",
-            "lang": "java",
-            "line": "L78"
-          }
-        ]
-      },
-      "norm_label": ".oncreate()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L56"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startstealthradiokeepalive",
-      "label": ".startStealthRadioKeepAlive()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "postDelayed",
-            "receiver_type": "Handler",
-            "lang": "java",
-            "line": "L391"
-          }
-        ]
-      },
-      "norm_label": ".startstealthradiokeepalive()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L390"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startwatchdogloop",
-      "label": ".startWatchdogLoop()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "postDelayed",
-            "receiver_type": "Handler",
-            "lang": "java",
-            "line": "L416"
-          }
-        ]
-      },
-      "norm_label": ".startwatchdogloop()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L415"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_triggerhapticfeedback",
-      "label": ".triggerHapticFeedback()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "vibrate",
-            "receiver_type": "Vibrator",
-            "lang": "java",
-            "line": "L207"
-          },
-          {
-            "callee": "createOneShot",
-            "receiver_type": "VibrationEffect",
-            "lang": "java",
-            "line": "L207"
-          },
-          {
-            "callee": "performHapticFeedback",
-            "receiver_type": "WebView",
-            "lang": "java",
-            "line": "L209"
-          }
-        ]
-      },
-      "norm_label": ".triggerhapticfeedback()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L204"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_setnetworklistener",
-      "label": ".setNetworkListener()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "NetworkStateListener",
-      "file_type": "code",
-      "norm_label": ".setnetworklistener()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
-      "source_location": "L37"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener_onnetworkavailable",
-      "label": ".onNetworkAvailable()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "NetworkStateListener",
-      "file_type": "code",
-      "norm_label": ".onnetworkavailable()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
-      "source_location": "L31"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener_onnetworklost",
-      "label": ".onNetworkLost()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "NetworkStateListener",
-      "file_type": "code",
-      "norm_label": ".onnetworklost()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
-      "source_location": "L32"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_ondestroy",
-      "label": ".onDestroy()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "NetworkStateListener",
-      "file_type": "code",
-      "norm_label": ".ondestroy()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L471"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startpersistentservice",
-      "label": ".startPersistentService()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "NetworkStateListener",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "e",
-            "receiver_type": "Log",
-            "lang": "java",
-            "line": "L107"
-          }
-        ]
-      },
-      "norm_label": ".startpersistentservice()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L97"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onprogresschanged",
-      "label": ".onProgressChanged()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "android.webkit.WebView",
-      "file_type": "code",
-      "norm_label": ".onprogresschanged()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L256"
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
-      "label": ".onShowFileChooser()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "android.webkit.WebView",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "createIntent",
-            "receiver_type": "FileChooserParams",
-            "lang": "java",
-            "line": "L273"
-          }
-        ]
-      },
-      "norm_label": ".onshowfilechooser()",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L265"
-    },
-    {
       "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewebview",
       "label": ".configureWebView()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
-      "community_name": "android.webkit.WebView",
+      "community": 5,
+      "community_name": ".onCreate",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -1293,6 +923,382 @@
       "source_location": "L111"
     },
     {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_configurewindowdecorations",
+      "label": ".configureWindowDecorations()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "clearFlags",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L87"
+          },
+          {
+            "callee": "addFlags",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L88"
+          },
+          {
+            "callee": "setStatusBarColor",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L89"
+          },
+          {
+            "callee": "setNavigationBarColor",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L90"
+          },
+          {
+            "callee": "setDecorFitsSystemWindows",
+            "receiver_type": "Window",
+            "lang": "java",
+            "line": "L93"
+          }
+        ]
+      },
+      "norm_label": ".configurewindowdecorations()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L85"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_isnetworkconnected",
+      "label": ".isNetworkConnected()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getActiveNetworkInfo",
+            "receiver_type": "ConnectivityManager",
+            "lang": "java",
+            "line": "L408"
+          },
+          {
+            "callee": "isConnected",
+            "receiver_type": "NetworkInfo",
+            "lang": "java",
+            "line": "L409"
+          }
+        ]
+      },
+      "norm_label": ".isnetworkconnected()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L404"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_oncreate",
+      "label": ".onCreate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getMainLooper",
+            "receiver_type": "Looper",
+            "lang": "java",
+            "line": "L69"
+          },
+          {
+            "callee": "loadUrl",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L76"
+          },
+          {
+            "callee": "restoreState",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L78"
+          }
+        ]
+      },
+      "norm_label": ".oncreate()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L56"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onnetworkavailable",
+      "label": ".onNetworkAvailable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "i",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L429"
+          },
+          {
+            "callee": "post",
+            "receiver_type": "Handler",
+            "lang": "java",
+            "line": "L430"
+          },
+          {
+            "callee": "getUrl",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L431"
+          },
+          {
+            "callee": "loadUrl",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L433"
+          }
+        ]
+      },
+      "norm_label": ".onnetworkavailable()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L427"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_performsmartreconnect",
+      "label": ".performSmartReconnect()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "currentTimeMillis",
+            "receiver_type": "System",
+            "lang": "java",
+            "line": "L373"
+          },
+          {
+            "callee": "i",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L381"
+          },
+          {
+            "callee": "makeText",
+            "receiver_type": "Toast",
+            "lang": "java",
+            "line": "L382"
+          },
+          {
+            "callee": "reload",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L383"
+          },
+          {
+            "callee": "w",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L385"
+          }
+        ]
+      },
+      "norm_label": ".performsmartreconnect()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L372"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startstealthradiokeepalive",
+      "label": ".startStealthRadioKeepAlive()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "postDelayed",
+            "receiver_type": "Handler",
+            "lang": "java",
+            "line": "L391"
+          }
+        ]
+      },
+      "norm_label": ".startstealthradiokeepalive()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L390"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startwatchdogloop",
+      "label": ".startWatchdogLoop()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "postDelayed",
+            "receiver_type": "Handler",
+            "lang": "java",
+            "line": "L416"
+          }
+        ]
+      },
+      "norm_label": ".startwatchdogloop()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L415"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_triggerhapticfeedback",
+      "label": ".triggerHapticFeedback()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".onCreate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "vibrate",
+            "receiver_type": "Vibrator",
+            "lang": "java",
+            "line": "L207"
+          },
+          {
+            "callee": "createOneShot",
+            "receiver_type": "VibrationEffect",
+            "lang": "java",
+            "line": "L207"
+          },
+          {
+            "callee": "performHapticFeedback",
+            "receiver_type": "WebView",
+            "lang": "java",
+            "line": "L209"
+          }
+        ]
+      },
+      "norm_label": ".triggerhapticfeedback()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L204"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_keepaliveservice_setnetworklistener",
+      "label": ".setNetworkListener()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": ".setnetworklistener()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L37"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener_onnetworkavailable",
+      "label": ".onNetworkAvailable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": ".onnetworkavailable()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L31"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_networkstatelistener_onnetworklost",
+      "label": ".onNetworkLost()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": ".onnetworklost()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L32"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_ondestroy",
+      "label": ".onDestroy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "norm_label": ".ondestroy()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L471"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_startpersistentservice",
+      "label": ".startPersistentService()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "NetworkStateListener",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "e",
+            "receiver_type": "Log",
+            "lang": "java",
+            "line": "L107"
+          }
+        ]
+      },
+      "norm_label": ".startpersistentservice()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L97"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onprogresschanged",
+      "label": ".onProgressChanged()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": ".onShowFileChooser",
+      "file_type": "code",
+      "norm_label": ".onprogresschanged()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L256"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_antigravitywebchromeclient_onshowfilechooser",
+      "label": ".onShowFileChooser()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": ".onShowFileChooser",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "createIntent",
+            "receiver_type": "FileChooserParams",
+            "lang": "java",
+            "line": "L273"
+          }
+        ]
+      },
+      "norm_label": ".onshowfilechooser()",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L265"
+    },
+    {
       "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_mainactivity_onbackpressed",
       "label": ".onBackPressed()",
       "_callable": true,
@@ -1393,88 +1399,412 @@
       "source_location": "L454"
     },
     {
+      "id": "readme",
+      "label": "README.md",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "readme.md",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_1_compilar_o_apk",
+      "label": "1. Compilar o APK",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. compilar o apk",
+      "source_file": "README.md",
+      "source_location": "L130"
+    },
+    {
+      "id": "readme_1_daemon_permanente_de_hardware_keepaliveservice",
+      "label": "1. Daemon Permanente de Hardware (`KeepAliveService`)",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. daemon permanente de hardware (`keepaliveservice`)",
+      "source_file": "README.md",
+      "source_location": "L74"
+    },
+    {
+      "id": "readme_2_auto_cura_de_conex\u00e3o_e_auto_clicker_de_dom",
+      "label": "2. Auto-Cura de Conex\u00e3o e Auto-Clicker de DOM",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. auto-cura de conexao e auto-clicker de dom",
+      "source_file": "README.md",
+      "source_location": "L79"
+    },
+    {
+      "id": "readme_2_instalar_e_blindar_no_celular_via_adb",
+      "label": "2. Instalar e Blindar no Celular via ADB",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. instalar e blindar no celular via adb",
+      "source_file": "README.md",
+      "source_location": "L149"
+    },
+    {
+      "id": "readme_3_stealth_radio_keep_alive_preven\u00e7\u00e3o_de_queda_da_torre_roteador",
+      "label": "3. Stealth Radio Keep-Alive (Preven\u00e7\u00e3o de Queda da Torre/Roteador)",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. stealth radio keep-alive (prevencao de queda da torre/roteador)",
+      "source_file": "README.md",
+      "source_location": "L83"
+    },
+    {
+      "id": "readme_4_sanitiza\u00e7\u00e3o_de_user_agent_isolamento_de_contas",
+      "label": "4. Sanitiza\u00e7\u00e3o de User-Agent & Isolamento de Contas",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. sanitizacao de user-agent & isolamento de contas",
+      "source_file": "README.md",
+      "source_location": "L87"
+    },
+    {
+      "id": "readme_5_pull_to_refresh_nativo_com_resposta_h\u00e1ptica",
+      "label": "5. Pull-to-Refresh Nativo com Resposta H\u00e1ptica",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. pull-to-refresh nativo com resposta haptica",
+      "source_file": "README.md",
+      "source_location": "L91"
+    },
+    {
+      "id": "readme_6_preven\u00e7\u00e3o_de_fechamento_acidental",
+      "label": "6. Preven\u00e7\u00e3o de Fechamento Acidental",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. prevencao de fechamento acidental",
+      "source_file": "README.md",
+      "source_location": "L95"
+    },
+    {
+      "id": "readme_antigravity_mobile_pro",
+      "label": "\ud83d\ude80 Antigravity Mobile Pro",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\ude80 antigravity mobile pro",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_arquitetura_do_sistema",
+      "label": "\ud83c\udfd7\ufe0f Arquitetura do Sistema",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83c\udfd7\ufe0f arquitetura do sistema",
+      "source_file": "README.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "readme_autor_e_licen\u00e7a",
+      "label": "\ud83d\udc64 Autor e Licen\u00e7a",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udc64 autor e licenca",
+      "source_file": "README.md",
+      "source_location": "L179"
+    },
+    {
+      "id": "readme_compila\u00e7\u00e3o_e_instala\u00e7\u00e3o",
+      "label": "\ud83d\udee0\ufe0f Compila\u00e7\u00e3o e Instala\u00e7\u00e3o",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udee0\ufe0f compilacao e instalacao",
+      "source_file": "README.md",
+      "source_location": "L122"
+    },
+    {
+      "id": "readme_configura\u00e7\u00e3o_de_sess\u00e3o_opcional",
+      "label": "\ud83d\udd10 Configura\u00e7\u00e3o de Sess\u00e3o (Opcional)",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udd10 configuracao de sessao (opcional)",
+      "source_file": "README.md",
+      "source_location": "L166"
+    },
+    {
+      "id": "readme_contexto_e_motiva\u00e7\u00e3o",
+      "label": "\ud83d\udccc Contexto e Motiva\u00e7\u00e3o",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udccc contexto e motivacao",
+      "source_file": "README.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "readme_estrutura_do_reposit\u00f3rio",
+      "label": "\ud83d\udcc2 Estrutura do Reposit\u00f3rio",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udcc2 estrutura do repositorio",
+      "source_file": "README.md",
+      "source_location": "L100"
+    },
+    {
+      "id": "readme_principais_diferenciais_e_otimiza\u00e7\u00f5es",
+      "label": "\u2728 Principais Diferenciais e Otimiza\u00e7\u00f5es",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u2728 principais diferenciais e otimizacoes",
+      "source_file": "README.md",
+      "source_location": "L72"
+    },
+    {
+      "id": "readme_pr\u00e9_requisitos",
+      "label": "Pr\u00e9-requisitos",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "\ud83d\ude80 Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "pre-requisitos",
+      "source_file": "README.md",
+      "source_location": "L124"
+    },
+    {
+      "id": "architecture",
+      "label": "ARCHITECTURE.md",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "architecture.md",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "architecture_1_an\u00e1lise_da_causa_raiz_por_que_a_webapk_original_falha",
+      "label": "1. An\u00e1lise da Causa Raiz: Por que a WebAPK Original Falha?",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. analise da causa raiz: por que a webapk original falha?",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "architecture_2_solu\u00e7\u00f5es_implementadas_no_antigravity_mobile_pro",
+      "label": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. solucoes implementadas no antigravity mobile pro",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L35"
+    },
+    {
+      "id": "architecture_3_especifica\u00e7\u00e3o_do_pipeline_de_compila\u00e7\u00e3o",
+      "label": "3. Especifica\u00e7\u00e3o do Pipeline de Compila\u00e7\u00e3o",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. especificacao do pipeline de compilacao",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L142"
+    },
+    {
+      "id": "architecture_a_foreground_service_e_locks_de_hardware",
+      "label": "A. Foreground Service e Locks de Hardware",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "a. foreground service e locks de hardware",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L37"
+    },
+    {
+      "id": "architecture_a_suspens\u00e3o_de_abas_e_congelamento_de_timers",
+      "label": "A. Suspens\u00e3o de Abas e Congelamento de Timers",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "a. suspensao de abas e congelamento de timers",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "architecture_b_intercepta\u00e7\u00e3o_e_watchdog_de_websocket_na_camada_web",
+      "label": "B. Intercepta\u00e7\u00e3o e Watchdog de WebSocket na Camada Web",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "b. interceptacao e watchdog de websocket na camada web",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L62"
+    },
+    {
+      "id": "architecture_b_o_problema_da_detec\u00e7\u00e3o_de_queda_navigator_online",
+      "label": "B. O Problema da Detec\u00e7\u00e3o de Queda (`navigator.onLine`)",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "b. o problema da deteccao de queda (`navigator.online`)",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "architecture_c_descarte_de_tabelas_nat_de_operadoras_celulares_rrc_idle_state",
+      "label": "C. Descarte de Tabelas NAT de Operadoras Celulares (RRC Idle State)",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "c. descarte de tabelas nat de operadoras celulares (rrc idle state)",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "architecture_c_manuten\u00e7\u00e3o_do_r\u00e1dio_ativo_stealth_keep_alive",
+      "label": "C. Manuten\u00e7\u00e3o do R\u00e1dio Ativo (Stealth Keep-Alive)",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "c. manutencao do radio ativo (stealth keep-alive)",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L103"
+    },
+    {
+      "id": "architecture_d_bypass_de_403_disallowed_user_agent_e_isolamento_de_sess\u00e3o",
+      "label": "D. Bypass de 403 Disallowed User-Agent e Isolamento de Sess\u00e3o",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "d. bypass de 403 disallowed user-agent e isolamento de sessao",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L125"
+    },
+    {
+      "id": "architecture_documenta\u00e7\u00e3o_de_engenharia_e_arquitetura_antigravity_mobile_pro",
+      "label": "\ud83c\udfdb\ufe0f Documenta\u00e7\u00e3o de Engenharia e Arquitetura: Antigravity Mobile Pro",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "2. Solu\u00e7\u00f5es Implementadas no Antigravity Mobile Pro",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83c\udfdb\ufe0f documentacao de engenharia e arquitetura: antigravity mobile pro",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "install_apk",
+      "label": "install_apk.sh",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "install_apk.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "install_apk.sh",
+      "source_file": "install_apk.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "install_apk_sh__entry",
+      "label": "install_apk.sh script",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "install_apk.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "install_apk.sh script",
+      "source_file": "install_apk.sh",
+      "source_location": "L1"
+    },
+    {
       "id": "android_graphics_bitmap",
       "label": "android.graphics.Bitmap",
       "_origin": "ast",
-      "community": 0,
-      "community_name": ".onPageStarted",
+      "community": 13,
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
       "norm_label": "android.graphics.bitmap",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "android_webkit_javascriptinterface",
-      "label": "android.webkit.JavascriptInterface",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": ".performSmartReconnect",
-      "file_type": "code",
-      "norm_label": "android.webkit.javascriptinterface",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_app_notification",
-      "label": "android.app.Notification",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": ".buildNotification",
-      "file_type": "code",
-      "norm_label": "android.app.notification",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_intent",
-      "label": "Intent",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": ".buildNotification",
-      "file_type": "code",
-      "norm_label": "intent",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_app_service",
-      "label": "android.app.Service",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KeepAliveService.java",
-      "file_type": "code",
-      "norm_label": "android.app.service",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_net_connectivitymanager",
-      "label": "android.net.ConnectivityManager",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KeepAliveService.java",
-      "file_type": "code",
-      "norm_label": "android.net.connectivitymanager",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
-      "label": "KeepAliveService.java",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KeepAliveService.java",
-      "file_type": "code",
-      "norm_label": "keepaliveservice.java",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
-      "source_location": "L1"
-    },
-    {
       "id": "android_webkit_webresourceerror",
       "label": "android.webkit.WebResourceError",
       "_origin": "ast",
       "community": 13,
-      "community_name": "AntigravityWebViewClient",
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
       "norm_label": "android.webkit.webresourceerror",
       "source_file": "",
@@ -1485,9 +1815,20 @@
       "label": "android.webkit.WebResourceRequest",
       "_origin": "ast",
       "community": 13,
-      "community_name": "AntigravityWebViewClient",
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
       "norm_label": "android.webkit.webresourcerequest",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_webview",
+      "label": "android.webkit.WebView",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "android.webkit.WebView",
+      "file_type": "code",
+      "norm_label": "android.webkit.webview",
       "source_file": "",
       "source_location": ""
     },
@@ -1496,9 +1837,64 @@
       "label": "android.webkit.WebViewClient",
       "_origin": "ast",
       "community": 13,
-      "community_name": "AntigravityWebViewClient",
+      "community_name": "android.webkit.WebView",
       "file_type": "code",
       "norm_label": "android.webkit.webviewclient",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_app_notification",
+      "label": "android.app.Notification",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "android.app.notification",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_app_service",
+      "label": "android.app.Service",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "android.app.service",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_content_intent",
+      "label": "android.content.Intent",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "android.content.intent",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_net_connectivitymanager",
+      "label": "android.net.ConnectivityManager",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "android.net.connectivitymanager",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_os_ibinder",
+      "label": "android.os.IBinder",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "android.os.ibinder",
       "source_file": "",
       "source_location": ""
     },
@@ -1510,6 +1906,39 @@
       "community_name": "KeepAliveService",
       "file_type": "code",
       "norm_label": "networkcallback",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice",
+      "label": "KeepAliveService.java",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "keepaliveservice.java",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_intent",
+      "label": "Intent",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "intent",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_override",
+      "label": "Override",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "KeepAliveService",
+      "file_type": "code",
+      "norm_label": "override",
       "source_file": "",
       "source_location": ""
     },
@@ -1536,37 +1965,81 @@
       "source_location": ""
     },
     {
-      "id": "android_content_intent",
-      "label": "android.content.Intent",
+      "id": "android_app_activity",
+      "label": "android.app.Activity",
       "_origin": "ast",
       "community": 3,
-      "community_name": "android.content.Intent",
+      "community_name": "MainActivity",
       "file_type": "code",
-      "norm_label": "android.content.intent",
+      "norm_label": "android.app.activity",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "android_os_ibinder",
-      "label": "android.os.IBinder",
+      "id": "android_net_uri",
+      "label": "android.net.Uri",
       "_origin": "ast",
       "community": 3,
-      "community_name": "android.content.Intent",
+      "community_name": "MainActivity",
       "file_type": "code",
-      "norm_label": "android.os.ibinder",
+      "norm_label": "android.net.uri",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "src_com_mateuscelestino_antigravitymobile_keepaliveservice_java_override",
-      "label": "Override",
+      "id": "android_os_handler",
+      "label": "android.os.Handler",
       "_origin": "ast",
       "community": 3,
-      "community_name": "android.content.Intent",
+      "community_name": "MainActivity",
       "file_type": "code",
-      "norm_label": "override",
+      "norm_label": "android.os.handler",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "android_os_vibrator",
+      "label": "android.os.Vibrator",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "norm_label": "android.os.vibrator",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_webkit_valuecallback",
+      "label": "android.webkit.ValueCallback",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "norm_label": "android.webkit.valuecallback",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_widget_progressbar",
+      "label": "android.widget.ProgressBar",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "norm_label": "android.widget.progressbar",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity",
+      "label": "MainActivity.java",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MainActivity",
+      "file_type": "code",
+      "norm_label": "mainactivity.java",
+      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
+      "source_location": "L1"
     },
     {
       "id": "android_content_context",
@@ -1595,31 +2068,9 @@
       "label": "android.annotation.SuppressLint",
       "_origin": "ast",
       "community": 5,
-      "community_name": "MainActivity",
+      "community_name": ".onCreate",
       "file_type": "code",
       "norm_label": "android.annotation.suppresslint",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_app_activity",
-      "label": "android.app.Activity",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "norm_label": "android.app.activity",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_net_uri",
-      "label": "android.net.Uri",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "norm_label": "android.net.uri",
       "source_file": "",
       "source_location": ""
     },
@@ -1628,53 +2079,20 @@
       "label": "android.os.Bundle",
       "_origin": "ast",
       "community": 5,
-      "community_name": "MainActivity",
+      "community_name": ".onCreate",
       "file_type": "code",
       "norm_label": "android.os.bundle",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "android_os_handler",
-      "label": "android.os.Handler",
+      "id": "android_webkit_javascriptinterface",
+      "label": "android.webkit.JavascriptInterface",
       "_origin": "ast",
       "community": 5,
-      "community_name": "MainActivity",
+      "community_name": ".onCreate",
       "file_type": "code",
-      "norm_label": "android.os.handler",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_os_vibrator",
-      "label": "android.os.Vibrator",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "norm_label": "android.os.vibrator",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_webkit_valuecallback",
-      "label": "android.webkit.ValueCallback",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "norm_label": "android.webkit.valuecallback",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_widget_progressbar",
-      "label": "android.widget.ProgressBar",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "norm_label": "android.widget.progressbar",
+      "norm_label": "android.webkit.javascriptinterface",
       "source_file": "",
       "source_location": ""
     },
@@ -1683,22 +2101,11 @@
       "label": "Handler",
       "_origin": "ast",
       "community": 5,
-      "community_name": "MainActivity",
+      "community_name": ".onCreate",
       "file_type": "code",
       "norm_label": "handler",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "src_com_mateuscelestino_antigravitymobile_mainactivity",
-      "label": "MainActivity.java",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "MainActivity",
-      "file_type": "code",
-      "norm_label": "mainactivity.java",
-      "source_file": "src/com/mateuscelestino/antigravitymobile/MainActivity.java",
-      "source_location": "L1"
     },
     {
       "id": "src_com_mateuscelestino_antigravitymobile_mainactivity_java_intent",
@@ -1716,20 +2123,9 @@
       "label": "android.webkit.WebChromeClient",
       "_origin": "ast",
       "community": 7,
-      "community_name": "android.webkit.WebView",
+      "community_name": ".onShowFileChooser",
       "file_type": "code",
       "norm_label": "android.webkit.webchromeclient",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_webkit_webview",
-      "label": "android.webkit.WebView",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "android.webkit.WebView",
-      "file_type": "code",
-      "norm_label": "android.webkit.webview",
       "source_file": "",
       "source_location": ""
     },
@@ -1738,7 +2134,7 @@
       "label": "FileChooserParams",
       "_origin": "ast",
       "community": 7,
-      "community_name": "android.webkit.WebView",
+      "community_name": ".onShowFileChooser",
       "file_type": "code",
       "norm_label": "filechooserparams",
       "source_file": "",
@@ -3114,6 +3510,127 @@
       "weight": 1.0
     },
     {
+      "source": "architecture",
+      "target": "architecture_documenta\u00e7\u00e3o_de_engenharia_e_arquitetura_antigravity_mobile_pro",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_1_an\u00e1lise_da_causa_raiz_por_que_a_webapk_original_falha",
+      "target": "architecture_a_suspens\u00e3o_de_abas_e_congelamento_de_timers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_1_an\u00e1lise_da_causa_raiz_por_que_a_webapk_original_falha",
+      "target": "architecture_b_o_problema_da_detec\u00e7\u00e3o_de_queda_navigator_online",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_1_an\u00e1lise_da_causa_raiz_por_que_a_webapk_original_falha",
+      "target": "architecture_c_descarte_de_tabelas_nat_de_operadoras_celulares_rrc_idle_state",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_2_solu\u00e7\u00f5es_implementadas_no_antigravity_mobile_pro",
+      "target": "architecture_c_manuten\u00e7\u00e3o_do_r\u00e1dio_ativo_stealth_keep_alive",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_2_solu\u00e7\u00f5es_implementadas_no_antigravity_mobile_pro",
+      "target": "architecture_d_bypass_de_403_disallowed_user_agent_e_isolamento_de_sess\u00e3o",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_2_solu\u00e7\u00f5es_implementadas_no_antigravity_mobile_pro",
+      "target": "architecture_a_foreground_service_e_locks_de_hardware",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_2_solu\u00e7\u00f5es_implementadas_no_antigravity_mobile_pro",
+      "target": "architecture_b_intercepta\u00e7\u00e3o_e_watchdog_de_websocket_na_camada_web",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_documenta\u00e7\u00e3o_de_engenharia_e_arquitetura_antigravity_mobile_pro",
+      "target": "architecture_3_especifica\u00e7\u00e3o_do_pipeline_de_compila\u00e7\u00e3o",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_documenta\u00e7\u00e3o_de_engenharia_e_arquitetura_antigravity_mobile_pro",
+      "target": "architecture_2_solu\u00e7\u00f5es_implementadas_no_antigravity_mobile_pro",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_documenta\u00e7\u00e3o_de_engenharia_e_arquitetura_antigravity_mobile_pro",
+      "target": "architecture_1_an\u00e1lise_da_causa_raiz_por_que_a_webapk_original_falha",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "build_apk",
       "target": "build_apk_sh__entry",
       "relation": "contains",
@@ -3122,6 +3639,204 @@
       "confidence_score": 1.0,
       "source_file": "build_apk.sh",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "install_apk",
+      "target": "install_apk_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "install_apk.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_antigravity_mobile_pro",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_antigravity_mobile_pro",
+      "target": "readme_estrutura_do_reposit\u00f3rio",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_antigravity_mobile_pro",
+      "target": "readme_compila\u00e7\u00e3o_e_instala\u00e7\u00e3o",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_antigravity_mobile_pro",
+      "target": "readme_contexto_e_motiva\u00e7\u00e3o",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_antigravity_mobile_pro",
+      "target": "readme_configura\u00e7\u00e3o_de_sess\u00e3o_opcional",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_antigravity_mobile_pro",
+      "target": "readme_autor_e_licen\u00e7a",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L179",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_antigravity_mobile_pro",
+      "target": "readme_arquitetura_do_sistema",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_antigravity_mobile_pro",
+      "target": "readme_principais_diferenciais_e_otimiza\u00e7\u00f5es",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_compila\u00e7\u00e3o_e_instala\u00e7\u00e3o",
+      "target": "readme_pr\u00e9_requisitos",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_compila\u00e7\u00e3o_e_instala\u00e7\u00e3o",
+      "target": "readme_1_compilar_o_apk",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_compila\u00e7\u00e3o_e_instala\u00e7\u00e3o",
+      "target": "readme_2_instalar_e_blindar_no_celular_via_adb",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_principais_diferenciais_e_otimiza\u00e7\u00f5es",
+      "target": "readme_1_daemon_permanente_de_hardware_keepaliveservice",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_principais_diferenciais_e_otimiza\u00e7\u00f5es",
+      "target": "readme_2_auto_cura_de_conex\u00e3o_e_auto_clicker_de_dom",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_principais_diferenciais_e_otimiza\u00e7\u00f5es",
+      "target": "readme_3_stealth_radio_keep_alive_preven\u00e7\u00e3o_de_queda_da_torre_roteador",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_principais_diferenciais_e_otimiza\u00e7\u00f5es",
+      "target": "readme_4_sanitiza\u00e7\u00e3o_de_user_agent_isolamento_de_contas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_principais_diferenciais_e_otimiza\u00e7\u00f5es",
+      "target": "readme_5_pull_to_refresh_nativo_com_resposta_h\u00e1ptica",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_principais_diferenciais_e_otimiza\u00e7\u00f5es",
+      "target": "readme_6_preven\u00e7\u00e3o_de_fechamento_acidental",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -3709,5 +4424,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fe33bd18ce1dc08a44242c2c4d04238fc0567bb9"
+  "built_at_commit": "97d699ac821469c971a12beb01a0a1cc60bed29d"
 }

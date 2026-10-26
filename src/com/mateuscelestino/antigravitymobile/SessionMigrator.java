@@ -16,7 +16,13 @@ public class SessionMigrator {
             CookieManager cookieManager = CookieManager.getInstance();
             cookieManager.setAcceptCookie(true);
 
-            InputStream is = context.getAssets().open("session_cookies.json");
+            InputStream is = null;
+            try {
+                is = context.getAssets().open("session_cookies.json");
+            } catch (Exception e) {
+                Log.d(TAG, "session_cookies.json não encontrado nos assets locais. Ignorando injeção prévia.");
+                return;
+            }
             int size = is.available();
             byte[] buffer = new byte[size];
             int read = is.read(buffer);

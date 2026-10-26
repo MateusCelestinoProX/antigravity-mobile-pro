@@ -1,0 +1,58 @@
+[
+  {
+    "name": "SID",
+    "value": "SAMPLE_SID_TOKEN",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "HSID",
+    "value": "SAMPLE_HSID_TOKEN",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": true
+  },
+  {
+    "name": "SSID",
+    "value": "SAMPLE_SSID_TOKEN",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "APISID",
+    "value": "SAMPLE_APISID_TOKEN",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "SAPISID",
+    "value": "SAMPLE_SAPISID_TOKEN",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "__Secure-1PSID",
+    "value": "SAMPLE_SECURE_1PSID",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "__Secure-3PSID",
+    "value": "SAMPLE_SECURE_3PSID",
+    "domain": ".google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  }
+]
