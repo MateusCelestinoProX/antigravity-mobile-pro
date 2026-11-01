@@ -1,0 +1,104 @@
+{
+  "build_apk.sh": {
+    "mtime": 1792962064.4963665,
+    "seen": 1792962117.1389399,
+    "ast_hash": "08e461153e3d0e2cef0bfd0c12ab75e3",
+    "semantic_hash": ""
+  },
+  "src/com/mateuscelestino/antigravitymobile/KeepAliveService.java": {
+    "mtime": 1792951854.03301,
+    "seen": 1792951931.833405,
+    "ast_hash": "3373c8fec76c59eef0eb0f758df7bb5d",
+    "semantic_hash": ""
+  },
+  "src/com/mateuscelestino/antigravitymobile/MainActivity.java": {
+    "mtime": 1792962093.3035083,
+    "seen": 1792962117.138944,
+    "ast_hash": "9de23c79a4772061d3d8ec8a7da7c59e",
+    "semantic_hash": ""
+  },
+  "res/drawable/ic_launcher.png": {
+    "mtime": 1792951792.0241401,
+    "seen": 1792951931.833408,
+    "ast_hash": "209dddc94aa711e7c59792a043dbd9f9",
+    "semantic_hash": ""
+  },
+  "res/drawable/ic_stat_antigravity.png": {
+    "mtime": 1792951792.0272224,
+    "seen": 1792951931.833409,
+    "ast_hash": "a28dd6b17736c99f6e5d5310aa76b334",
+    "semantic_hash": ""
+  },
+  "res/mipmap-hdpi/ic_launcher.png": {
+    "mtime": 1792951791.9531868,
+    "seen": 1792951931.83341,
+    "ast_hash": "9cf1eb280b98a9f652d5fab742154e65",
+    "semantic_hash": ""
+  },
+  "res/mipmap-mdpi/ic_launcher.png": {
+    "mtime": 1792951791.932301,
+    "seen": 1792951931.83341,
+    "ast_hash": "b991b61fa05e74bcf9038796ad9f3d92",
+    "semantic_hash": ""
+  },
+  "res/mipmap-xhdpi/ic_launcher.png": {
+    "mtime": 1792951791.9732797,
+    "seen": 1792951931.833411,
+    "ast_hash": "43c3869ea77e1025070a4497e7a4481a",
+    "semantic_hash": ""
+  },
+  "res/mipmap-xxhdpi/ic_launcher.png": {
+    "mtime": 1792951791.9952128,
+    "seen": 1792951931.8334122,
+    "ast_hash": "a28dd6b17736c99f6e5d5310aa76b334",
+    "semantic_hash": ""
+  },
+  "res/mipmap-xxxhdpi/ic_launcher.png": {
+    "mtime": 1792951792.013339,
+    "seen": 1792951931.8334131,
+    "ast_hash": "209dddc94aa711e7c59792a043dbd9f9",
+    "semantic_hash": ""
+  },
+  "screen_test.png": {
+    "mtime": 1792952008.5001688,
+    "seen": 1792952469.769566,
+    "ast_hash": "fde589a36a616adfa70410c7662d762e",
+    "semantic_hash": ""
+  },
+  "src/com/mateuscelestino/antigravitymobile/SessionMigrator.java": {
+    "mtime": 1792988783.6711051,
+    "seen": 1792988934.699805,
+    "ast_hash": "b16feb42c2f510ee09de7f1a25380876",
+    "semantic_hash": ""
+  },
+  "screen_test2.png": {
+    "mtime": 1792962162.7506857,
+    "seen": 1792962259.954635,
+    "ast_hash": "fbff38b5618254fe613fe001c4526929",
+    "semantic_hash": ""
+  },
+  "assets/session_cookies.template.json": {
+    "mtime": 1792988795.6961048,
+    "seen": 1792988934.69979,
+    "ast_hash": "048b9858c7edb52ed08c1d82da6d8b62",
+    "semantic_hash": ""
+  },
+  "install_apk.sh": {
+    "mtime": 1792988814.753211,
+    "seen": 1792988934.699799,
+    "ast_hash": "da46260f53a73b88e657b43cbd3382ac",
+    "semantic_hash": ""
+  },
+  "ARCHITECTURE.md": {
+    "mtime": 1792988882.4412417,
+    "seen": 1792988934.699806,
+    "ast_hash": "ba1d5d626626e2dc308342c6c8fd648c",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1792988857.7237322,
+    "seen": 1792988934.699807,
+    "ast_hash": "e46634669d752b52ba44ba12c3f86500",
+    "semantic_hash": ""
+  }
+}

@@ -35,7 +35,9 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements KeepAliveService.NetworkStateListener {
     private static final String TAG = "AntigravityMainActivity";
-    private static final String TARGET_URL = "https://antigravity.google.com/u/1/?pli=1";
+    private static final String PREFS_NAME = "antigravity_prefs";
+    private static final String KEY_LAST_URL = "last_workspace_url";
+    private static final String DEFAULT_URL = "https://antigravity.google.com/";
 
     private WebView webView;
     private ProgressBar progressBar;
@@ -52,6 +54,7 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
 
     private boolean isReconnecting = false;
     private long lastReconnectTime = 0;
+    private boolean isInitialStartup = true;
 
     @Override
     @SuppressLint("SetJavaScriptEnabled")
@@ -73,7 +76,9 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         configureTouchAndGestures();
 
         if (savedInstanceState == null) {
-            webView.loadUrl(TARGET_URL);
+            String initialUrl = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                    .getString(KEY_LAST_URL, DEFAULT_URL);
+            webView.loadUrl(initialUrl);
         } else {
             webView.restoreState(savedInstanceState);
         }
@@ -222,7 +227,12 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
             progressBar.setVisibility(View.GONE);
-            view.evaluateJavascript("try { sessionStorage.setItem('agy.oauth.last_session_index', '1'); } catch(e){}", null);
+            if (url != null && url.startsWith("https://antigravity.google.com") && !url.contains("error")) {
+                getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                        .edit()
+                        .putString(KEY_LAST_URL, url)
+                        .apply();
+            }
             CookieManager.getInstance().flush();
             injectWatchdogScript();
         }
@@ -312,6 +322,12 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         }
 
         @JavascriptInterface
+        public void onConnectingHangDetected() {
+            Log.w(TAG, "[Bridge] Travamento no handshake 'Connecting to instance' detectado pelo Sentinel.");
+            handler.post(() -> performSmartReconnect(true));
+        }
+
+        @JavascriptInterface
         public void onSocketClosed(int code) {
             Log.w(TAG, "[Bridge] WebSocket fechado: " + code);
             if (code == 1006 || code == 1001 || code == 1005) {
@@ -329,7 +345,7 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
         String js = "(function() {\n" +
                 "  if (window.__antigravitySentinelInjected) return;\n" +
                 "  window.__antigravitySentinelInjected = true;\n" +
-                "  console.log('[Sentinel Pro v2.6] Ativado com monitoramento resiliente.');\n" +
+                "  console.log('[Sentinel Pro v2.8] Ativado com auto-cura de handshake e resiliência.');\n" +
                 "  \n" +
                 "  // 1. Interceptor de WebSocket nativo\n" +
                 "  if (window.WebSocket) {\n" +
@@ -344,7 +360,7 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
                 "    window.WebSocket.prototype = OriginalWS.prototype;\n" +
                 "  }\n" +
                 "  \n" +
-                "  // 2. Auto-recuperação do botão de Reconexão no DOM\n" +
+                "  // 2. Auto-recuperação do DOM e detecção de travamento de handshake\n" +
                 "  setInterval(function() {\n" +
                 "    // Tenta encontrar botões de reconexão ou retry automáticos\n" +
                 "    const buttons = document.querySelectorAll('button, [role=\"button\"]');\n" +
@@ -362,6 +378,22 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
                 "      if (window.AntigravityNative) {\n" +
                 "        window.AntigravityNative.onInstanceDisconnected();\n" +
                 "      }\n" +
+                "      return;\n" +
+                "    }\n" +
+                "    \n" +
+                "    // Detecção ativa de loop infinito em 'Connecting to instance...'\n" +
+                "    if (text.includes('Connecting to instance') || text.includes('Conectando à instância')) {\n" +
+                "      window.__connectingHangCount = (window.__connectingHangCount || 0) + 1;\n" +
+                "      // 5 ciclos x 1.8s = ~9 segundos preso na tela preta de conexão\n" +
+                "      if (window.__connectingHangCount >= 5) {\n" +
+                "        console.log('[Sentinel] Travamento em Connecting to instance detectado. Forçando renegociação do handshake...');\n" +
+                "        window.__connectingHangCount = 0;\n" +
+                "        if (window.AntigravityNative) {\n" +
+                "          window.AntigravityNative.onConnectingHangDetected();\n" +
+                "        }\n" +
+                "      }\n" +
+                "    } else {\n" +
+                "      window.__connectingHangCount = 0;\n" +
                 "    }\n" +
                 "  }, 1800);\n" +
                 "})();";
@@ -427,10 +459,16 @@ public class MainActivity extends Activity implements KeepAliveService.NetworkSt
     @Override
     public void onNetworkAvailable() {
         Log.i(TAG, "Notificação de rede disponível recebida do KeepAliveService.");
+        if (isInitialStartup) {
+            isInitialStartup = false;
+            return;
+        }
         handler.post(() -> {
             String currentUrl = webView.getUrl();
             if (currentUrl == null || currentUrl.isEmpty() || currentUrl.startsWith("data:") || currentUrl.startsWith("about:blank")) {
-                webView.loadUrl(TARGET_URL);
+                String target = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                        .getString(KEY_LAST_URL, DEFAULT_URL);
+                webView.loadUrl(target);
             } else {
                 performSmartReconnect(true);
             }

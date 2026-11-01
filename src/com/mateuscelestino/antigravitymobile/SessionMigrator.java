@@ -16,6 +16,14 @@ public class SessionMigrator {
             CookieManager cookieManager = CookieManager.getInstance();
             cookieManager.setAcceptCookie(true);
 
+            // PRESERVAÇÃO ESTRITA: Se o WebView já possui credenciais ativas do smartphone,
+            // NUNCA sobrescrever. Respeita rigorosamente a sessão local salva.
+            String existingCookies = cookieManager.getCookie("https://antigravity.google.com");
+            if (existingCookies != null && (existingCookies.contains("SID=") || existingCookies.contains("OSID="))) {
+                Log.i(TAG, "Sessão já ativa e válida no WebView. Credenciais locais do smartphone preservadas.");
+                return;
+            }
+
             InputStream is = null;
             try {
                 is = context.getAssets().open("session_cookies.json");
